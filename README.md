@@ -63,11 +63,19 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    check console and see a 500 server error
+    check rails server errors
 
 - Update the number of likes for a toy
 
   - How I debugged:
-
+    check console and see a 400 error (not found)
+    check routes and make sure update is in routes
+    check controller and see it says updated instead of update
+    check rails server error now there is no content 204 error. need to add json render
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+    check console and see a 400 error (not found)
+    check rails server errors ActionController::RoutingError (No route matches [DELETE] "/toys/2"):
+    add destroy route to routes
